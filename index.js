@@ -9,7 +9,7 @@ const connection = new solana.Connection(rpcUrl)
 const provider = new serum.Provider(connection)
 
 const mangoMint = new solana.PublicKey('MangoCzJ36AjZyKwVj3VnYU4GTonjfVEnJmvvWaxLac')
-const treasuryTokens = new solana.PublicKey('FLN6mK95CDGyaRoJNUcHmSYMLPuuKUaqn1Zo7ibiLbwd')
+const treasuryTokens = new solana.PublicKey('Guiwem4qBivtkSFrxZAEfuthBz6YuWyCwS4G3fjBYu5Z')
 
 app.get('/total', async function (req, res) {
   const mintInfo = await serum.getMintInfo(provider, mangoMint)
